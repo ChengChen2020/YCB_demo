@@ -6,8 +6,8 @@
 #SBATCH --time=2:00:00
 #SBATCH --mem=10GB
 #
-#SBATCH --mail_type=END
-#SBATCH --mail_user=cc6858@nyu.edu
+#SBATCH --mail-type=END
+#SBATCH --mail-user=cc6858@nyu.edu
 
 cd /scratch/$USER/YCB_demo
 

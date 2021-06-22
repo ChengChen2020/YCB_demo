@@ -11,5 +11,5 @@ Adapted from [PoseCNN-PyTorch](https://github.com/NVlabs/PoseCNN-PyTorch)
 
 - on hpc
     ```Shell
-    ./hpc.sh
+    sbatch hpc.sh
     ```
