@@ -1,0 +1,6 @@
+numpy==1.19.5
+torch==1.7.1
+scipy==1.6.1
+easydict==1.9
+opencv_python==4.5.1.48
+transforms3d==0.3.1
