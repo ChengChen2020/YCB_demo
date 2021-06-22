@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#SBATCH --job-name=ycb_demo
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=2:00:00
+#SBATCH --mem=10GB
+#
+#SBATCH --mail_type=END
+#SBATCH --mail_user=cc6858@nyu.edu
+
+cd /scratch/$USER/YCB_demo
+
+nvidia-smi
+
+module purge
+module load python/intel/3.8.6
+
+pip install -r requirements.txt
+
+./experiments/scripts/ycb_video_test.sh
